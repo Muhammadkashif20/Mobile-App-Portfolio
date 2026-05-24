@@ -2,22 +2,25 @@ import React from "react";
 
 const projects = [
   {
-    title: "Food Delivery App (React Native)",
-    desc: "A modern food ordering mobile app built with React Native & Expo featuring cart system, smooth navigation and clean UI experience.",
-    img: "/project1.png",
-    tag: "React Native",
+    title: "Todo App",
+    desc: "A simple and efficient task management mobile app built with React Native for daily productivity.",
+    img: "../assets/img/todo-app.png",
+    tag: "React Native (Expo)",
+    apk: "/apk/Todo-Application.apk",
   },
   {
-    title: "E-Commerce Mobile App",
-    desc: "Cross-platform shopping app with product listings, filters, cart flow and optimized performance using Expo.",
-    img: "/project2.png",
-    tag: "Expo",
+    title: "BazaarX App",
+    desc: "A modern shopping and marketplace mobile app with smooth UI",
+    img: "../assets/img/bazaary-app.png",
+    tag: "React Native (Expo)",
+    apk: "/apk/BazaarX-Application.jpeg",
   },
   {
-    title: "Developer Portfolio Website",
-    desc: "Modern responsive portfolio built with React.js and Tailwind CSS with focus on animations and clean UI structure.",
-    img: "/project3.png",
-    tag: "React.js",
+    title: "Food Ordering App",
+    desc: "A fully responsive food delivery mobile app with smooth UI",
+    img: "../assets/img/food-ordering.png",
+    tag: "React Native (Expo)",
+    apk: "/apk/Food-Ordering-App.apk",
   },
 ];
 
@@ -26,19 +29,16 @@ const Portfolio = () => {
     <section id="portfolio" className="py-20 px-6 md:px-10 bg-[#050816] text-white">
       <div className="max-w-7xl mx-auto">
 
-        {/* VIP Heading */}
+        {/* Heading */}
         <div className="mb-16 text-center">
-
           <h2 className="text-[42px] sm:text-[60px] lg:text-[82px] font-black leading-[0.95] tracking-[-3px]">
-            My{" "}
-            <span className="text-cyan-400">Work</span>
+            My <span className="text-cyan-400">Work</span>
           </h2>
 
           <p className="text-gray-400 max-w-2xl mx-auto mt-8 leading-8 text-[15px]">
             A selection of React Native & React.js projects focused on mobile-first development,
             smooth UI interactions and production-ready architecture.
           </p>
-
         </div>
 
         {/* Grid */}
@@ -50,10 +50,9 @@ const Portfolio = () => {
               className="group relative bg-white/5 border border-white/10 rounded-3xl overflow-hidden backdrop-blur-xl"
             >
 
-              {/* Image placeholder */}
+              {/* Image */}
               <div className="h-[210px] bg-[#0B1120] relative overflow-hidden">
 
-                {/* tag */}
                 <span className="absolute top-4 left-4 text-xs bg-cyan-400/10 text-cyan-300 border border-cyan-400/20 px-3 py-1 rounded-full backdrop-blur-xl">
                   {project.tag}
                 </span>
@@ -71,9 +70,14 @@ const Portfolio = () => {
                   {project.desc}
                 </p>
 
-                <button className="mt-6 text-sm text-cyan-400 hover:text-white transition">
-                  View Project →
-                </button>
+                {/* APK Download Button */}
+                <a
+                  href={project.apk}
+                  download
+                  className="mt-6 inline-block text-sm text-cyan-400 hover:text-white transition"
+                >
+                  Download APK →
+                </a>
 
               </div>
 
