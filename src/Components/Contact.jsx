@@ -55,7 +55,7 @@ const Contact = () => {
         {/* Bottom info */}
         <div className="text-center mt-10 text-gray-500 text-sm">
           Or email me directly at{" "}
-          <span className="text-cyan-400">kashif.dev@email.com</span>
+          <span className="text-cyan-400">unnamed9080@gmail.com</span>
         </div>
 
       </div>
