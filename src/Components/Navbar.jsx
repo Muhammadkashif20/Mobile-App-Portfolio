@@ -23,9 +23,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
 
         {/* Logo */}
-        <h1 className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500">
-          Kashif<span className="text-white">.dev</span>
-        </h1>
+    <h1 className="flex items-center gap-2 text-xl sm:text-2xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500">
+
+  <span className="text-cyan-400">✦</span>
+
+  MK<span className="text-white">Portfolio</span>
+
+</h1>
 
         {/* Links */}
         <div className="hidden md:flex items-center gap-10 text-gray-300 text-sm">

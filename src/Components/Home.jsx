@@ -64,13 +64,21 @@ const Home = () => {
                 transition={{ delay: 0.5 }}
                 className="flex gap-5 mt-10"
               >
-                <button className="bg-cyan-400 text-black px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 hover:scale-105 duration-300">
+                {/* View Projects */}
+                <a
+                  href="#portfolio"
+                  className="bg-cyan-400 text-black px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 hover:scale-105 duration-300"
+                >
                   View Work <FaArrowRight />
-                </button>
+                </a>
 
-                <button className="border border-white/10 bg-white/5 px-8 py-4 rounded-2xl hover:bg-white/10">
+                {/* Contact */}
+                <a
+                  href="#contact"
+                  className="border border-white/10 bg-white/5 px-8 py-4 rounded-2xl hover:bg-white/10"
+                >
                   Contact Me
-                </button>
+                </a>
               </motion.div>
 
               {/* Social */}
@@ -79,11 +87,11 @@ const Home = () => {
                 transition={{ repeat: Infinity, duration: 3 }}
                 className="flex gap-5 mt-12"
               >
-                <a className="w-14 h-14 flex items-center justify-center rounded-2xl bg-white/5 hover:bg-cyan-400 hover:text-black transition">
+                <a target="_blank" href="https://github.com/Muhammadkashif20" className="w-14 h-14 flex items-center justify-center rounded-2xl bg-white/5 hover:bg-cyan-400 hover:text-black transition">
                   <FaGithub />
                 </a>
 
-                <a className="w-14 h-14 flex items-center justify-center rounded-2xl bg-white/5 hover:bg-cyan-400 hover:text-black transition">
+                <a target="_blank" href="https://www.linkedin.com/in/muhammad-kashif-85053b305/" className="w-14 h-14 flex items-center justify-center rounded-2xl bg-white/5 hover:bg-cyan-400 hover:text-black transition">
                   <FaLinkedinIn />
                 </a>
               </motion.div>
