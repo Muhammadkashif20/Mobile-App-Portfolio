@@ -8,21 +8,21 @@ const projects = [
     desc: "A simple and efficient task management mobile app built with React Native for daily productivity.",
     img: todoAppImg,
     tag: "React Native (Expo)",
-    apk: "../assets/apk/Todo-Application.apk",
+    apk: "/public/apk/Todo-Application.apk",
   },
   {
     title: "BazaarX App",
     desc: "A modern shopping and marketplace mobile app with smooth UI",
     img: bazaarXImg,
     tag: "React Native (Expo)",
-    apk: "../assets/apk/BazaarX-Application.apk",
+    apk: "/public/apk/BazaarX-Application.apk",
   },
   {
     title: "Food Ordering App",
     desc: "A fully responsive food delivery mobile app with smooth UI",
     img: foodOrderingImg,
     tag: "React Native (Expo)",
-    apk: "../assets/apk/Food-Ordering-App.apk",
+    apk: "/public/apk/Food-Ordering-App.apk",
   },
 ];
 
