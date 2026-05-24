@@ -2,27 +2,30 @@ import React from "react";
 import todoAppImg from "../assets/img/todo-app.png";
 import bazaarXImg from "../assets/img/BazaarX-Application.jpeg";
 import foodOrderingImg from "../assets/img/Food-Ordering-App.jpeg";  
+import BazaarX from "/public/apk/Todo-Application.apk"
+import Food_Ordering from "/public/apk/Todo-Application.apk"
+import Todo-App from "/public/apk/Todo-Application.apk"
 const projects = [
   {
     title: "Todo App",
     desc: "A simple and efficient task management mobile app built with React Native for daily productivity.",
     img: todoAppImg,
     tag: "React Native (Expo)",
-    apk: "/public/apk/Todo-Application.apk",
+    apk: BazaarX,
   },
   {
     title: "BazaarX App",
     desc: "A modern shopping and marketplace mobile app with smooth UI",
     img: bazaarXImg,
     tag: "React Native (Expo)",
-    apk: "/public/apk/BazaarX-Application.apk",
+    apk: Food_Ordering,
   },
   {
     title: "Food Ordering App",
     desc: "A fully responsive food delivery mobile app with smooth UI",
     img: foodOrderingImg,
     tag: "React Native (Expo)",
-    apk: "/public/apk/Food-Ordering-App.apk",
+    apk: Todo-App,
   },
 ];
 
