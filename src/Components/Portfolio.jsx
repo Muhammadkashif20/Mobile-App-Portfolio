@@ -20,17 +20,22 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-28 px-6 bg-[#050816] text-white">
+    <section id="portfolio" className="py-16 px-6 md:px-10 bg-[#050816] text-white">
       <div className="max-w-7xl mx-auto">
 
-        {/* Title */}
-        <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-          My <span className="text-cyan-400">Projects</span>
-        </h2>
+        {/* VIP Heading */}
+        <div className="mb-16 text-center">
 
-        <p className="text-gray-400 max-w-2xl mb-14 leading-7">
-          A collection of mobile apps and web projects built with React Native, Expo and React.js.
-        </p>
+          <h2 className="text-[42px] sm:text-[60px] lg:text-[82px] font-black leading-[0.95] tracking-[-3px]">
+            My{" "}
+            <span className="text-cyan-400">Projects</span>
+          </h2>
+
+          <p className="text-gray-400 max-w-2xl mx-auto mt-8 leading-8 text-[15px]">
+            A collection of mobile apps and web projects built with React Native, Expo and React.js.
+          </p>
+
+        </div>
 
         {/* Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedinIn, FaArrowRight } from "react-icons/fa";
 import TypewriterText from "./TypeWriter";
+
 const Home = () => {
   return (
     <section
@@ -12,27 +13,16 @@ const Home = () => {
       <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-cyan-500/20 rounded-full blur-[140px]" />
       <div className="absolute bottom-[-180px] right-[-100px] w-[350px] h-[350px] bg-blue-500/10 rounded-full blur-[160px]" />
 
+      {/* Grid Overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:70px_70px]" />
+
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10">
         <div className="min-h-screen flex items-center">
           <div className="w-full grid lg:grid-cols-2 gap-12 items-center">
 
-            {/* ================= LEFT ================= */}
+            {/* LEFT */}
             <div>
 
-              {/* Badge animation
-              <motion.div
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="inline-flex items-center gap-3 border border-cyan-400/20 bg-white/5 backdrop-blur-2xl rounded-full px-5 py-2.5 mb-8"
-              >
-                <span className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" />
-                <p className="text-[11px] tracking-[4px] uppercase text-cyan-300">
-                  React Developer
-                </p>
-              </motion.div> */}
-
-              {/* Heading animated */}
               <motion.h1
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -45,23 +35,26 @@ const Home = () => {
                 </span>
                 Kashif
               </motion.h1>
+
+              {/* ROLE (UPDATED FOR RN FOCUS) */}
               <TypewriterText
                 texts={[
                   "React Native Developer",
-                  "React Developer",
-                  "Frontend Developer",
+                  "Expo Mobile App Developer",
+                  "Frontend Developer (React.js)",
                 ]}
               />
 
-              {/* Sub text */}
+              {/* Sub text (UPDATED) */}
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
                 className="max-w-xl mt-8 text-gray-400 leading-8"
               >
-                I build modern, animated and pixel-perfect web & mobile
-                experiences using React.js and React Native.
+                I build modern cross-platform mobile apps using React Native & Expo,
+                along with responsive web interfaces using React.js.
+                Focused on performance, smooth UX and clean UI systems.
               </motion.p>
 
               {/* Buttons */}
@@ -80,7 +73,7 @@ const Home = () => {
                 </button>
               </motion.div>
 
-              {/* Social floating animation */}
+              {/* Social */}
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{ repeat: Infinity, duration: 3 }}
@@ -96,17 +89,14 @@ const Home = () => {
               </motion.div>
             </div>
 
-            {/* ================= RIGHT (ANIMATED VISUAL ONLY) ================= */}
+            {/* RIGHT (UNCHANGED) */}
             <div className="relative hidden lg:flex justify-center">
-
-              {/* floating glow */}
               <motion.div
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ repeat: Infinity, duration: 6 }}
                 className="absolute w-[350px] h-[350px] bg-cyan-400/20 rounded-full blur-[120px]"
               />
 
-              {/* floating phone */}
               <motion.div
                 animate={{ y: [0, -15, 0] }}
                 transition={{ repeat: Infinity, duration: 4 }}
@@ -123,7 +113,6 @@ const Home = () => {
                 </div>
               </motion.div>
 
-              {/* floating small shapes */}
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
