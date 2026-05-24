@@ -3,18 +3,18 @@ import { FaMobileAlt, FaCode, FaPaintBrush } from "react-icons/fa";
 
 const services = [
   {
-    title: "React Native Apps",
-    desc: "High-performance mobile apps with native-like smooth UX using Expo & React Native.",
+    title: "React Native Development",
+    desc: "I build high-performance mobile applications using React Native & Expo with smooth navigation, clean architecture and native-like UI experience.",
     icon: <FaMobileAlt />,
   },
   {
     title: "React.js Frontend",
-    desc: "Modern web apps with clean architecture, fast performance and responsive UI.",
+    desc: "Modern, responsive and scalable web applications using React.js with focus on performance, reusable components and clean UI systems.",
     icon: <FaCode />,
   },
   {
-    title: "UI/UX Design",
-    desc: "Minimal, modern and conversion-focused interfaces with strong visual hierarchy.",
+    title: "UI/UX Design Systems",
+    desc: "Minimal and user-focused interface designs with strong visual hierarchy, modern layouts and conversion-driven user experience.",
     icon: <FaPaintBrush />,
   },
 ];
@@ -25,7 +25,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
 
         {/* VIP Heading */}
-          <div className="text-center mb-16">
+        <div className="text-center mb-16">
 
           <h2 className="text-[42px] sm:text-[60px] lg:text-[82px] font-black leading-[0.95] tracking-[-3px]">
             My{" "}
@@ -33,8 +33,8 @@ const Services = () => {
           </h2>
 
           <p className="text-gray-400 max-w-2xl mx-auto mt-8 leading-8 text-[15px]">
-            I help startups and businesses build modern mobile and web apps with React Native and React.js,
-            focused on performance and clean user experience.
+            I specialize in building production-ready mobile apps with React Native & Expo,
+            and modern web applications using React.js focused on speed, UI quality and scalability.
           </p>
 
         </div>
@@ -43,18 +43,15 @@ const Services = () => {
         <div className="grid md:grid-cols-3 gap-10">
 
           {services.map((item, index) => (
-            <div
-              key={index}
-              className="relative group"
-            >
+            <div key={index} className="relative group">
 
-              {/* Outer glow border effect */}
+              {/* Glow border */}
               <div className="absolute -inset-[1px] rounded-3xl bg-gradient-to-r from-cyan-500/20 to-blue-500/10 opacity-0 group-hover:opacity-100 transition duration-500" />
 
               {/* Card */}
               <div className="relative bg-[#0B1120] border border-white/10 rounded-3xl p-8 h-full">
 
-                {/* Icon circle */}
+                {/* Icon */}
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center bg-white/5 text-cyan-400 text-xl mb-6">
                   {item.icon}
                 </div>
@@ -64,14 +61,13 @@ const Services = () => {
                   {item.title}
                 </h3>
 
-                {/* Description */}
+                {/* Desc */}
                 <p className="text-gray-400 leading-7 text-sm">
                   {item.desc}
                 </p>
 
-                {/* Bottom line animation */}
+                {/* Bottom line */}
                 <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-cyan-400 group-hover:w-full transition-all duration-500" />
-
               </div>
 
             </div>
