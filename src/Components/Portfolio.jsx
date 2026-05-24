@@ -4,7 +4,7 @@ import bazaarXImg from "../assets/img/BazaarX-Application.jpeg";
 import foodOrderingImg from "../assets/img/Food-Ordering-App.jpeg";  
 import BazaarX from "/public/apk/Todo-Application.apk"
 import Food_Ordering from "/public/apk/Todo-Application.apk"
-import Todo-App from "/public/apk/Todo-Application.apk"
+import Todo_App from "/public/apk/Todo-Application.apk"
 const projects = [
   {
     title: "Todo App",
@@ -25,7 +25,7 @@ const projects = [
     desc: "A fully responsive food delivery mobile app with smooth UI",
     img: foodOrderingImg,
     tag: "React Native (Expo)",
-    apk: Todo-App,
+    apk: Todo_App,
   },
 ];
 
