@@ -1,24 +1,26 @@
 import React from "react";
-
+import todoAppImg from "../assets/img/todo-app.png";
+import bazaarXImg from "../assets/img/BazaarX-Application.jpeg";
+import foodOrderingImg from "../assets/img/Food-Ordering-App.jpeg";  
 const projects = [
   {
     title: "Todo App",
     desc: "A simple and efficient task management mobile app built with React Native for daily productivity.",
-    img: "../assets/img/todo-app.png",
+    img: todoAppImg,
     tag: "React Native (Expo)",
     apk: "/apk/Todo-Application.apk",
   },
   {
     title: "BazaarX App",
     desc: "A modern shopping and marketplace mobile app with smooth UI",
-    img: "../assets/img/bazaary-app.png",
+    img: bazaarXImg,
     tag: "React Native (Expo)",
     apk: "/apk/BazaarX-Application.jpeg",
   },
   {
     title: "Food Ordering App",
     desc: "A fully responsive food delivery mobile app with smooth UI",
-    img: "../assets/img/food-ordering.png",
+    img: foodOrderingImg,
     tag: "React Native (Expo)",
     apk: "/apk/Food-Ordering-App.apk",
   },
@@ -51,17 +53,24 @@ const Portfolio = () => {
             >
 
               {/* Image */}
-              <div className="h-[210px] bg-[#0B1120] relative overflow-hidden">
+          <div className="h-[210px] bg-[#0B1120] relative overflow-hidden flex items-center justify-center">
 
-                <span className="absolute top-4 left-4 text-xs bg-cyan-400/10 text-cyan-300 border border-cyan-400/20 px-3 py-1 rounded-full backdrop-blur-xl">
-                  {project.tag}
-                </span>
+  <img
+    src={project.img}
+    alt={project.title}
+    className="w-[85%] h-full object-contain group-hover:scale-105 transition duration-500"
+  />
 
-              </div>
+  <span className="absolute top-4 left-4 text-xs bg-cyan-400/10 text-cyan-300 border border-cyan-400/20 px-3 py-1 rounded-full backdrop-blur-xl">
+    {project.tag}
+  </span>
+
+</div>
 
               {/* Content */}
               <div className="p-6">
 
+              
                 <h3 className="text-xl font-semibold group-hover:text-cyan-400 transition">
                   {project.title}
                 </h3>
